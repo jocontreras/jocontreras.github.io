@@ -1,159 +1,744 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenny's Cheat sheets</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Jenny's HTML and CSS CheatSheets</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400" rel="stylesheet">
-</head>
-
-
-<body>
-
-  <h1>HTML5 and CSS Cheat Sheets</h1>
-  <!--<p>I'm Jennifer Contreras, and I am attending the Craft Academy Bootcamp.
-     To start with, I started to list important tags and selectors that will
-     help me along the way.<p>
-  </div>
--->
-
-
-       <ul class="navigation">
-        <li><a href="#htmlcs">HTML5</a></li>
-        <li>CSS</li>
-        <li>GIT</li>
-        <li>RUBY</li>
-      </ul>
-
-
-      <table>
-        <thead>
-        <tr>
-        <th scope="co"l>HTML TAG</th>
-         <th scope="col">Description</th>
-          <th scope="col">Example</th>
-
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td colspan="3">Basic Tags</td>
-        </tr>
-<!--doctype-->
-        <tr>
-          <td>&lt!DOCTYPE html&gt</td>
-          <td> It tells the browser what type of document to expect,
-            along with what version of HTML is being used in the document.
-          </td>
-          <td>NOTE: IT must be the first line of code in all of your
-            HTML documents.
-          <font color=red>  &lt!DOCTYPE html&gt</font></br>
-            &lthtml&gt</br>
-            . </br>
-            .</br>
-            &lthtml&gt
-           </td>
-        </tr>
-<!--hmtl-->
-        <tr>
-          <td>&lthtml&gt  &lt/html&gt</td>
-          <td>Anything between <html> and </html> will be considered HTML code.</td>
-          <td>  &lt!DOCTYPE html&gt</br>
-          <font color=red>  &lt/html&gt </font></br>
-            . </br>
-            .</br>
-          <font color=red>&lthtml&gt</font>
-          </td>
-        </tr>
-<!--head-->
-        <tr>
-          <td>&lthead&gt  &lt/head&gt</td>
-          <td>Contains meta information about the document</td>
-          <td>  &lt!DOCTYPE html&gt</br>
-            &lthtml&gt</br>
-          <font color=red>  &lt/head&gt </font></br>
-            . </br>
-            .</br>
-          <font color=red>&lthead&gt</font></br>
-          &lt/html&gt
-          </td>
-        </tr>
-<!--title-->
-        <tr>
-          <td>&lttitle&gt  &lt/title&gt</td>
-          <td>Specifies a title for the document</td>
-          <td>  &lt!DOCTYPE html&gt</br>
-            &lthtml&gt</br>
-          &lt/head&gt</br>
-          <font color=red>&nbsp; &nbsp;&lttitle&gt </font>
-            ...
-          <font color=red>&nbsp;&nbsp;&lt/title&gt</font></br>
-          &lthead&gt</br>
-          &lt/html&gt
-          </td>
-        </tr>
-<!--body-->
-    <tr>
-      <td>&ltbody&gt  &lt/body&gt</td>
-      <td>Contains the visible page content</td>
-      <td>  &lt!DOCTYPE html&gt</br>
-        &lthtml&gt</br>
-      &lt/head&gt</br>
-      &nbsp; &nbsp;&lttitle&gt </font> ...
-      &lt/title&gt</font></br>
-      &lthead&gt</br>
-      <font color=red> &ltbody&gt </font></br>
-        . </br>
-        .</br>
-      <font color=red>&nbsp;&ltbody&gt</font></br>
-
-      &lt/html&gt
-      </td>
-    </tr>
+    <!--DESKTOP NAVIGATION-->
+    <nav class="top-bar nav-desktop">
+      <div class="wrap">
+        <div class="top-bar-left">
+          <h3 class="site-logo">Jenny's Cheat sheets</h3>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu menu-desktop">
+              <li><a href="#html-cs">HTML</a></li>
+              <li><a href="#css-cs">CSS</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
 
+    <!--HERO SECTION-->
+      <section class="hero">
+        <div class="wrap">
+        <h1>Welcome to my HTML and CSS Cheat sheets!</h1>
+          <p>HTML (the Hypertext Markup Language) and CSS (Cascading Style Sheets) are two of the core technologies for building Web pages.
+             HTML provides the structure of the page, CSS the (visual and aural) layout, for a variety of devices.
+             Along with graphics and scripting, HTML and CSS are the basis of building Web pages and Web ApplicationsLearning
+             HTML and CSS is fun especially you are getting the output that you want correctly<a href="https://www.w3.org/standards/webdesign/htmlcss" target="_blank"><sup>1</sup></a>.
+             <p>It is fun to study HTML and CSS especially the correct the design is generated. It is easy to learn but the problem is remembering all the formats,elements, attributes  etc.
+                Therefore, making cheet sheets is recommended to make the scripting more productive.
+             </p>
+          <h5 >Click the buttons to download <em>foundation framework</em> and <em>atom text editor</em> that will help you code faster...</h5>
+          <a href="http://foundation.zurb.com/" target="_blank" class="button">Foundation 6.0</a>
+          <a href="https://atom.io/" target="_blank" class="button success">Atom</a>
+        </div>
+      </section>
 
-    <tr>
-      <td>Headings<br/>
-          &lth1&gt  &lt/h1&gt<br/>
-          &lth2&gt  &lt/h2&gt<br/>
-          &lth3&gt  &lt/h3&gt<br/>
-          &lth4&gt  &lt/h4&gt<br/>
-          &lth5&gt  &lt/h5&gt<br/>
-          &lth6&gt  &lt/h6&gt<br/>
+      <!--HTML CHEATSHEET SECTION-->
+      <section class="main" >
+        <div class="wrap row">
+              <div class="small-12 medium-6 column ">
+                <a name="html-cs"><h1>HTML</h1></a>
+                <hr>
+                <table class="section" border="1">
+                  <thead >
+                    <tr>
+                      <th width="150">TAG</span></th>
+                      <th width="200">DESCRIPTION</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <td colspan="2"><strong>HEAD</strong></td>
+                  </tr>
+                  <tr>
+                    <td>&ltlink rel=”stylesheet” href=”?” type=”text/css”&gt</td>
+                    <td>External CSS link</td>
+                  </tr>
+                  <tr>
+                    <td>&ltscript language=”Javascript” type=”text/javascript&gt</td>
+                    <td>Embedded javascript</td>
+                  </tr>
+                  <tr>
+                    <td>&ltmeta name="?" content="?" /&gt</td>
+                    <td>Tag provides metadata about the HTML document</td>
+                  </tr>
+                  <tr>
+                      <td colspan="2"><strong>GENERAL</strong></td>
+                    </tr>
+                    <tr>
+                      <td>&ltbody&gt &lt/body&gt</td>
+                      <td>Visible part of the page</td>
+                    </tr>
+                    <tr>
+                    <td>&lthead&gt &lt/head&gt</td>
+                      <td>Part not displayed on page</td>
+                    </tr>
+                    <tr>
+                      <td>&lthtmlr&gt &lt/html&gt</td>
+                      <td>Creates an HTML page</td>
+                      </tr>
+                    <tr>
+                      <td>&lttitle&gt &lt/title&gt</td>
+                      <td>Displays an image</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><strong>LINKS</strong></td>
+                    </tr>
+                    <tr>
+                      <td>&lt img src="URL"&gt</td>
+                      <td>hyperlink</td>
+                    </tr>
+                    <tr>
+                      <td>&lt a href="#"&gt</td>
+                      <td>Link to anchor in current page</td>
+                    </tr>
+                    <tr>
+                      <td>&lt a href="URL"&gt</td>
+                      <td>Link to another page</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><strong>STRUCTURE</strong></td>
+                    </tr>
+                    <tr>
+                      <td>&ltdiv&gt</td>
+                      <td>Formats structure or block of text</td>
+                    </tr>
+                    <tr>
+                      <td>&ltem&gt</td>
+                      <td>Italic text</td>
+                    </tr>
+                    <tr>
+                      <td>&lth1&gt...&lth1&gt</td>
+                      <td>Page heading, h1 is the biggest..h6 is the smallest</td>
+                    </tr>
+                    <tr>
+                      <td>&lthr&gt</td>
+                      <td>Horizontal rule</td>
+                    </tr>
+                    <tr>
+                      <td>&ltp&gt</td>
+                      <td>Paragraph</td>
+                    </tr>
+                    <tr>
+                      <td>&ltspan&gt</td>
+                      <td>Inline formatting</td>
+                    </tr>
+                    <tr>
+                      <td>&ltstrong&gt</td>
+                      <td>Bold text</td>
+                    </tr>
+                    <tr>
+                      <td>&ltsub&gt</td>
+                      <td>Subscript text</td>
+                    </tr>
+                    <tr>
+                      <td>&ltsup&gt</td>
+                      <td>Superscript text</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><strong>TABLE</strong></td>
+                    </tr>
+                    <tr>
+                      <td>&ltcaption&gt</td>
+                      <td>Table caption</td>
+                    </tr>
+                    <tr>
+                      <td>&lttable&gt</td>
+                      <td>Defines a table</td>
+                    </tr>
+                    <tr>
+                      <td>&ltthead&gt</td>
+                      <td>Header section of table</td>
+                    </tr>
+                    <tr>
+                      <td>&lttbody&gt</td>
+                      <td>Body section of table</td>
+                    </tr>
+                    <tr>
+                      <td>&ltth&gt</td>
+                      <td>Table header cells</td>
+                    </tr>
+                    <tr>
+                      <td>&ltth colspan=”?”&gt</td>
+                      <td>Number of columns table header cell spans</td>
+                    </tr>
+                    <tr>
+                      <td>&lttr&gt</td>
+                      <td>Table row</td>
+                    </tr>
+                    <tr>
+                      <td>&lttd&gt</td>
+                      <td>Table cell</td>
+                    </tr>
+                    <tr>
+                      <td>&lttd colspan=”?”&gt</td>
+                      <td>Number of columns cell spans</td>
+                    </tr>
+                    <tr>
+                      <td>&lttd rowspan=”?”&gt</td>
+                      <td>Number of rows cell spans</td>
+                    </tr>
+                    <tr>
+                      <td>&lttfoot&gt</td>
+                      <td>Footer section of the table</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><strong>LIST</strong></td>
+                    </tr>
+                    <tr>
+                      <td>&ltdd&gt</td>
+                      <td>Definition</td>
+                    </tr>
+                    <tr>
+                      <td>&ltdl&gt</td>
+                      <td>definition list</td>
+                    </tr>
+                    <tr>
+                      <td>&ltdt>&gt</td>
+                      <td>Denition term</td>
+                    </tr>
+                    <tr>
+                      <td>&ltol&gt</td>
+                      <td>Ordered list</td>
+                    </tr>
+                    <tr>
+                      <td>&ltul&gt</td>
+                      <td>Unordered list</td>
+                    </tr>
+                    <tr>
+                      <td>&ltli&gt</td>
+                      <td>Item in a list</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><strong>FORM</strong></td>
+                    </tr>
+                    <tr>
+                      <td>&ltform&gt</td>
+                      <td>Defines a form</td>
+                    </tr>
+                    <tr>
+                      <td>&ltinput type=“?”&gt</td>
+                      <td>Form element: button, checkbox, radio, submit,reset, submit, text</td>
+                    </tr>
+                    <tr>
+                      <td>&ltoption&gt</td>
+                      <td>Menu item in a select box</td>
+                    </tr>
+                    <tr>
+                      <td>&ltselect&gt</td>
+                      <td>Drop-down menu</td>
+                    </tr>
+                    <tr>
+                      <td>&lttextarea&gt</td>
+                      <td>Multi-row text area</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="small-12 medium-6 column ">
+                  <h1><a name="html-cs">HTML5</a></h1>
+                <hr>
+                <table class="section" border="1">
+                  <thead >
+                    <tr>
+                      <th width="150">TAG</th>
+                      <th width="200">DESCRIPTION</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="2"><strong>NEW ELEMENTS FOR HTML5</strong></td>
+                    </tr>
+                    <tr>
+                      <td>&ltarticle&gt</td>
+                      <td>Defines an article in the document</td>
+                    </tr>
+                    <tr>
+                      <td>&ltaside&gt</td>
+                      <td>Defines content aside from the page content</td>
+                    </tr>
+                    <tr>
+                      <td>&ltaudio&gt</td>
+                      <td>specifies a standard way to embed audio in a web page.</td>
+                    </tr>
+                    <tr>
+                      <td>&ltdetails&gt</td>
+                      <td>Defines additional details that the user can view or hide</td>
+                    </tr>
+                    <tr>
+                      <td>&ltdialog&gt</td>
+                      <td>Defines a dialog box or window</td>
+                    </tr>
+                    <tr>
+                      <td>&ltfigcaption&gt</td>
+                      <td>Defines a caption for a &ltfigure&gt element</td>
+                    </tr>
+                    <tr>
+                      <td>&ltfigure&gt</td>
+                      <td>Defines self-contained content, like illustrations, diagrams, photos, code listings, etc.</td>
+                    </tr>
+                    <tr>
+                      <td>&ltfooter&gt</td>
+                      <td>Defines a footer for the document or a section</td>
+                    </tr>
+                    <tr>
+                      <td>&lthgroup&gt</td>
+                      <td>Used to group a set of h1–h6 elements when the heading has multiple levels, such as subheadings, alternative titles, or taglines.</td>
+                    </tr>
+                    <tr>
+                      <td>&ltmain&gt</td>
+                      <td>Defines the main content of a document</td>
+                    </tr>
+                    <tr>
+                      <td>&ltmark&gt</td>
+                      <td>Defines marked or highlighted text</td>
+                    </tr>
+                    <tr>
+                      <td>&ltmenuitem&gt</td>
+                      <td>Defines a command/menu item that the user can invoke from a popup menu</td>
+                    </tr>
+                    <tr>
+                      <td>&ltmeter&gt</td>
+                      <td>Defines a scalar measurement within a known range (a gauge)</td>
+                    </tr>
+                    <tr>
+                      <td>&ltnav&gt</td>
+                      <td>Defines navigation links in the document</td>
+                    </tr>
+                    <tr>
+                      <td>&ltprogress&gt</td>
+                      <td>Defines the progress of a task</td>
+                    </tr>
+                    <tr>
+                      <td>&ltrp&gt</td>
+                      <td>Defines what to show in browsers that do not support ruby annotations</td>
+                    </tr>
+                    <tr>
+                      <td>&ltrt&gt</td>
+                      <td>Defines an explanation/pronunciation of characters (for East Asian typography)</td>
+                    </tr>
+                    <tr>
+                      <td>&ltruby&gt</td>
+                      <td>Defines a ruby annotation (for East Asian typography)</td>
+                    </tr>
+                    <tr>
+                      <td>&ltsection&gt</td>
+                      <td>Defines a section in the document</td>
+                    </tr>
+                    <tr>
+                      <td>&ltsummary&gt</td>
+                      <td>Defines a visible heading for a &ltdetails&gt element</td>
+                    </tr>
+                    <tr>
+                      <td>&ltime&gt</td>
+                      <td>Defines a date/time</td>
+                    </tr>
+                    <tr>
+                      <td>&ltvideo&gt</td>
+                      <td>specifies a standard way to embed a video in a web page.</td>
+                    </tr>
+                    <tr>
+                      <td>&ltwbr&gt</td>
+                      <td>Defines a possible line-break</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><strong>NEW FORM ELEMENTS</strong></td>
+                    </tr>
+                    <tr>
+                      <td>&ltdatalist&gt</td>
+                      <td>Defines pre-defined options for input controls</td>
+                    </tr>
+                    <tr>
+                      <td>&ltkeygen&gt</td>
+                      <td>Defines a key-pair generator field (for forms)</td>
+                    </tr>
+                    <tr>
+                      <td>&ltoutput&gt</td>
+                      <td>Defines the result of a calculation</td>
+                    </tr>
+                    <tr>
+                      <td><strong>NEW INPUT TYPES</strong></td>
+                      <td><strong>NEW INPUT ATTRIBUTES</strong></td>
+                    </tr>
+                    <tr>
+                      <td>color</td>
+                      <td>autocomplete</td>
+                    </tr>
+                    <tr>
+                      <td>date</td>
+                      <td>autofocus</td>
+                    </tr>
+                    <tr>
+                      <td>datetime</td>
+                      <td>form</td>
+                    </tr>
+                    <tr>
+                      <td>datetime-local</td>
+                      <td>formaction</td>
+                    </tr>
+                    <tr>
+                      <td>email</td>
+                      <td>formenctype</td>
+                    </tr>
+                    <tr>
+                      <td>month</td>
+                      <td>formmethod</td>
+                    </tr>
+                    <tr>
+                      <td>number</td>
+                      <td>formnovalidate</td>
+                    </tr>
+                    <tr>
+                      <td>range</td>
+                      <td>formtarget</td>
+                    </tr>
+                    <tr>
+                      <td>search</td>
+                      <td>height and width</td>
+                    </tr>
+                    <tr>
+                      <td>tel</td>
+                      <td>list</td>
+                    </tr>
+                    <tr>
+                      <td>time</td>
+                      <td>min and max</td>
+                    </tr>
+                    <tr>
+                      <td>url</td>
+                      <td>multiple</td>
+                    </tr>
+                    <tr>
+                      <td>week</td>
+                      <td>pattern</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          </div>
+        </section>
 
-      </td>
-      <td>Heading defines a large heading</td>
-      <td>Send Invoice</td>
-    </tr>
+        <!--CSS CHEAT SHEET SECTION-->
+        <section class="main">
+          <!--<div class="wrap row small-up-1 medium-up-2">  row means everyboday will do the same thind-->
+          <div class="wrap row">
+              <div class="small-12 medium-6 column ">
+                    <a name="css-cs"><h1>CSS </h1></a>
+                    <hr>
+                      <table class="section" border="1">
+                      <tbody>
+                        <tr>
+                          <th width="350">SYNTAX</th>
+                        </tr>
+                        <tr>
+                          <td>selector {propert:value;}</td>
+                        </tr>
+                        <tr>
+                          <td><strong>External Style Sheet</strong</td>
+                        </tr>
+                        <tr>
+                          <td>&ltlink rel="stylesheet" type="text/css href="stylec2.css"  /&gt</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Internal Style Sheet</strong</td>
+                        </tr>
+                        <tr>
+                          <td>&ltstyle type="text/css"&gt</td>
+                        </tr>
+                        <tr>
+                          <td>selector {propert:value;}</td>
+                        </tr>
+                          <tr>
+                            <td>&lt/style&gt</td>
+                          </tr>
+                        </tr>
+                        <tr>
+                          <td><strong>Inline Style</strong</td>
+                        </tr>
+                        <tr>
+                          <td>&lttag style="property: value"&gt</td>
+                        </tr>
+                      </tbody>
+                      </table>
+
+                    <!--General-->
+                      <table class="section" border="1">
+                        <tbody>
+                          <tr>
+                            <th colspan="2" >GENERAL</th>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Class</td>
+                            <td>String preceded by a period</td>
+                          </tr>
+                          <tr>
+                            <td>ID</td>
+                            <td>String preceded by a hash mark</td>
+                          </tr>
+                          <tr>
+                            <td>div</td>
+                            <td>Formats structure or block of text </td>
+                          </tr>
+                          <tr>
+                            <td>span</td>
+                            <td>Inline formatting</td>
+                          </tr>
+                          <tr>
+                            <td>color</td>
+                            <td>Foreground color</td>
+                          </tr>
+                          <tr>
+                            <td>cursor</td>
+                            <td>Appearance of the cursor</td>
+                          </tr>
+                          <tr>
+                            <td>display</td>
+                            <td>block; inline; list-item; none</td>
+                          </tr>
+                            <tr >
+                              <td rowspan="2">overflow</td>
+                              <td>How content overflowing its box is handled </td>
+                          </tr>
+                          <tr>
+                            <td>visible, hidden, scroll, auto </td>
+                        </tr>
+                          <tr>
+                            <td>visibility</td>
+                            <td>visible, hidden</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+              <!--Font-->
+                      <table class="section" border="1">
+                        <tbody>
+                          <tr>
+                            <th colspan="2">FONT</th>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>font-style</td>
+                            <td>Italic, normal </td>
+                          </tr>
+                          <tr>
+                            <td>font-variant</td>
+                            <td>normal, small-caps</td>
+                          </tr>
+                          <tr>
+                            <td>font-weight</td>
+                            <td>bold, normal, lighter, bolder, integer (100-900)</td>
+                          </tr>
+                          <tr>
+                            <td>font-size</td>
+                            <td>Size of the font</td>
+                          </tr>
+                          <tr>
+                            <td>font-family</td>
+                            <td>Specific font(s) to be used</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!--text-->
+                      <table class="section" border="1">
+                        <tbody>
+                          <tr>
+                            <th colspan="2">TEXT</th>
+                          </tr>
+                          <tr>
+                            <td>letter-spacing</td>
+                            <td>Space between letters</td>
+                          </tr>
+                          <tr>
+                            <td>line-height</td>
+                            <td>Vertical distance between baselines</td>
+                          </tr>
+                          <tr>
+                            <td>text-align</td>
+                            <td>Horizontal alignment</td>
+                          </tr>
+                          <tr>
+                            <td>text-decoration</td>
+                            <td>blink, line-through, none, overline, underline</td>
+                          </tr>
+                          <tr>
+                             <td>text-indent</td>
+                             <td>First line indentation </td>
+                          </tr>
+                          <tr>
+                              <td>text-transform</td>
+                              <td>capitalize, lowercase, uppercase</td>
+                          </tr>
+                          <tr>
+                              <td>vertical-align</td>
+                              <td>Vertical alignment</td>
+                          </tr>
+                        </tbody>
+                      </table>
+              </div>
+
+              <div class="small-12 medium-6 column ">
+                  <h1><a name="html-cs">Selectors</a></h1>
+                  <hr>
+                    <table class="section" border="1">
+                      <tbody>
+                        <tr>
+                          <th colspan="2">BOX MODEL</th>
+                        </tr>
+                        <tr>
+                          <td><img src="img/boxmodel_image.png" /></td>
+                          <td>height; width; margin-top; margin-right; margin-bottom;
+                             margin-left; padding-top; padding-right; padding-bottom; padding-left;
+                         </td>
+                        </tr>
+                    </tbody>
+                    <table class="section" border="1">
+                      <tbody>
+                        <tr>
+                          <th colspan="2">BORDER</th>
+                        </tr>
+                        <tr>
+                          <td>border-width</td>
+                          <td>Width of the border</td>
+                        </tr>
+                        <tr>
+                          <td>border-style</td>
+                          <td>dashed; dotted; double; groove; inset; outset; ridge; solid;none</td>
+                        </tr>
+                        <tr>
+                          <td>border-color</td>
+                          <td>Color of the border</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="section" border="1">
+                  <tbody>
+                    <tr>
+                      <th colspan="2">POSITION</th>
+                    </tr>
+                    <tr>
+                      <td>clear</td>
+                      <td>Any floating elements around the element?: (both, left, right, none)</td>
+                    </tr>
+                    <tr>
+                      <td>float</td>
+                      <td>Floats to a specified side:(left, right, none)</td>
+                    </tr>
+                    <tr>
+                      <td>left</td>
+                      <td>The left position of an element:(auto, length values (pt, in, cm, px)</td>
+                    </tr>
+                    <tr>
+                      <td>top</td>
+                      <td>The top position of an element: auto, length values (pt, in, cm, px)</td>
+                    </tr>
+                    <tr>
+                      <td>position</td>
+                      <td>static, relative, absolute</td>
+                    </tr>
+                    <tr>
+                      <td>z-index</td>
+                      <td>Element above or below overlapping elements? : auto, integer (higher numbers on top)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="section" border="1">
+              <tbody>
+                <tr>
+                  <th colspan="2">BACKGROUND</th>
+                </tr>
+                <tr>
+                  <td width="150">background-color</td>
+                  <td width="200">Background color</td>
+                </tr>
+                <tr>
+                  <td>background-image</td>
+                  <td>Background image</td>
+                </tr>
+                <tr>
+                  <td>background-repeat</td>
+                  <td>repeat, no-repeat, repeat-x, repeat-y</td>
+                </tr>
+                <tr>
+                  <td>background-attachment</td>
+                  <td>Background image scroll with the element?; scroll, fixed</td>
+                </tr>
+                <tr>
+                  <td>background-position</td>
+                  <td>(x y), top, center, bottom, left, right</td>
+                </tr>
+            </tbody>
+          </table>
+
+          <table class="section" border="1">
+            <tbody>
+              <tr>
+                <th colspan="2">LIST</th>
+              </tr>
+              <tr>
+                <td width="150">list-style-type</td>
+                <td width="150">Type of bullet or numbering in the list:
+                  disc; circle; square; decimal; lower-roman; upper-roman; lower-alpha; upper-alpha; none</td>
+              </tr>
+              <tr>
+                <td>list-style-position</td>
+                <td>Position of the bullet or number in a list: inside; outside</td>
+              </tr>
+              <tr>
+                <td>list-style-image</td>
+                <td>Image to be used as the bullet in a list</td>
+              </tr>
+            </tbody>
+        </table>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+      <div class="wrap row small-up-1 medium-up-3">
+          <div class="column">
+            <h4>Useful Links</h4>
+            <hr>
+            <a href="https://www.codecademy.com/learn/web" target="_blank"><span>Codeacademy</span></a>
+            <a href="http://htmlcolorcodes.com/"><span>Hex colors</span></a>
+          </div>
+          <div class="column">
+            <h4>Site Map</h4>
+            <hr>
+            <a href="#html-cs"><span>HTML</span></a>
+            <a href="#css-cs"><span>CSS</span></a>
+
+          </div>
+
+          <div class="column">
+            <h4>Social Media</h4>
+            <hr>
+            <a href="https://medium.com/@jen.almarasy" target="_blank"><span>My Blog</span></a>
+            <a href="https://twitter.com/JenBeng2012" target="_blank"><span>Twitter</span></a>
+          </div>
+
+      </div>
+
+    </footer>
 
 
-      </tbody>
-        <tfoot>
-          <tr>
-            <td>Total</td>
-            <td></td>
-            <td>28</td>
-          </tr>
 
-        </tfoot>
-
-      </table>
-
-<p class="linkpic"> MORE TAGS...</p>
-<center>
-     <a href="http://www.inmotionhosting.com/img/infographics/html5_cheat_sheet_tags.png" target="_blank">
-      <img src="http://www.inmotionhosting.com/img/infographics/html5_cheat_sheet_tags-670x460.png" width="570" height="360" border="1" alt="Click to make it readable!" /></a>
-    <div>  &copyHTML5 Cheat Sheet By InMotion Hosting - A <a href="http://www.inmotionhosting.com/vps-hosting">Virtual Private Servers</a> Provider</div>
-
-<p class="linkpic"> EVENT HANDLER ATTRIBUTES...</p>
-      <a href="http://www.inmotionhosting.com/img/infographics/html5_cheat_sheet_event_attributes.png" target="_blank">
-      <img src="http://www.inmotionhosting.com/img/infographics/html5_cheat_sheet_event_attributes-670x460.png" width="570" height="360" border="1" alt="HTML5 Cheat Sheet - Event Handler Attributes" /></a>
-      <div>HTML5 Cheat Sheet By InMotion Hosting - A <a href="http://www.inmotionhosting.com/">Web Hosting</a> Provider</div>
-
-</center>
-
-</body>
-
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>

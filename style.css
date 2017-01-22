@@ -1,12 +1,14 @@
-h1 {
-  color: #0066ff;
-  text-align: center;
-}
+
 
 body {
   background: #EEE;
   margin: 0;
   padding: 0;
+}
+
+.header {
+  color: #0066ff;
+  text-align: center;
 }
 
 /* Navigation */
